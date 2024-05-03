@@ -1,0 +1,6 @@
+Welcome to Kroger. Place your grocery items into your shopping cart by entering each item's information.
+ enclose string entries in quotes, separate fields with comas
+ for example: "00016000306707", "Betty Crocker Double Chocolate Chunk Cookie Mix", 17.19
+ Enter CTL-Z (Windows) or CTL-D (Linux) to quit
+
+Enter UPC, Product Band, Product Name, and Price
