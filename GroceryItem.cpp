@@ -371,22 +371,4 @@ std::istream & operator>>( std::istream & stream, GroceryItem & groceryItem )
 
 
 
-// operator<<
-std::ostream &
-operator<<( std::ostream & stream, const GroceryItem & groceryItem )
-{
-  ///////////////////////// TO-DO (22) //////////////////////////////
-  /// This function should be symmetrical with operator>> above.  Read what your write, and write what you read
-  ///
-  /// Hint:  Brand and product names may have quotes, which need to escaped when printing.  Use std::quoted to read and write quoted strings.  See
-  ///        1) https://en.cppreference.com/w/cpp/io/manip/quoted
-  ///        2) https://www.youtube.com/watch?v=Mu-GUZuU31A
-  const std::string delimiter = ", ";
-  stream << std::quoted( groceryItem.upcCode() ) << delimiter
-         << std::quoted( groceryItem.brandName() ) << delimiter
-         << std::quoted( groceryItem.productName() ) << delimiter
-         << groceryItem.price();
-  return stream;
 
-  /////////////////////// END-TO-DO (22) ////////////////////////////
-}
